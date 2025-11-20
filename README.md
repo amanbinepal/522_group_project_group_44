@@ -12,9 +12,11 @@ We use the diabetes_binary_health_indicators_BRFSS2015.csv dataset containing 25
 
 The data set used in this project is from the Behavioral Risk Factor Surveillance System (BRFSS) 2015, an annual health-related telephone survey conducted by the Centers for Disease Control and Prevention (CDC). The original dataset was cleaned and prepared by Alex Teboul and is available on Kaggle [here] https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset/data
 
+Date was sourced from: https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators
+
 ## Report
 
-The final report can be found [here] 
+The final report can be found in src folder.
 
 ## Usage
 
@@ -22,7 +24,7 @@ First time running the project,
 run the following from the root of this repository:
 
 ``` bash
-conda-lock install --name diabetes-predictor conda-lock.yml
+conda-lock install --name 522-project conda-lock.yml
 ```
 
 To run the analysis,
@@ -32,16 +34,20 @@ run the following from the root of this repository:
 jupyter lab 
 ```
 
-1. Open `notebooks/diabetes_predict_report.ipynb` in Jupyter Lab
-2. Under "Select Kernel" choose "Python [conda env:diabetes-predictor]"
+1. Open `src/diabetes_prediabetes_analysis.ipynb` in Jupyter Lab
+2. Under "Select Kernel" choose "Python [conda env:522-project]"
 3. From the "Kernel" menu, click "Restart Kernel and Run All Cells..."
 
 ## Dependencies
 
 conda 
+
 conda-lock
+
 jupyterlab
+
 nb_conda_kernels
+
 Python and all packages listed in environment.yml
 
 ## License
