@@ -41,7 +41,7 @@ Open `notebooks/<predict_name>.ipynb` in Jupyter Lab
 and under Switch/Select Kernel choose 
 "Python [conda env:<env_name>]".
 
-Next, under the "Kernel" menu click "Restart Kernel and Run All Cells..".
+Next, under the "Kernel" menu click "Restart Kernel and Run All Cells...".
 
 ## Dependencies
 
