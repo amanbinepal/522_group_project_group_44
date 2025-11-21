@@ -34,7 +34,7 @@ run the following from the root of this repository:
 jupyter lab 
 ```
 
-1. Open `src/diabetes_prediabetes_analysis.ipynb` in Jupyter Lab
+1. Open `src/diabetes_analysis.ipynb` in Jupyter Lab
 2. Under "Select Kernel" choose "Python [conda env:522-project]"
 3. From the "Kernel" menu, click "Restart Kernel and Run All Cells..."
 
