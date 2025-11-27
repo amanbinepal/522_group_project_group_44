@@ -3,6 +3,7 @@ name: "522-project"
 channels:
   - conda-forge
   - defaults
+
 dependencies:
   - python
   - ipykernel
@@ -12,4 +13,10 @@ dependencies:
   - vl-convert-python
   - pyarrow
   - ucimlrepo
-  - vegafusion
+  - jupyterlab
+  - pip
+  - pip:
+      - vegafusion
+      - pointblank
+  
+
