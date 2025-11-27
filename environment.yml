@@ -11,7 +11,5 @@ dependencies:
   - altair
   - vl-convert-python
   - pyarrow
-  - pip
-  - pip:
-      - ucimlrepo
-      - vegafusion
+  - ucimlrepo
+  - vegafusion
