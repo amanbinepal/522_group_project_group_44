@@ -56,26 +56,41 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Everyone should contribute equally to all aspects - how can we do?<br>
 </li>
-<li>Each memory work from branches and that we shift reviews (at least one other teammate)<br>
+<li>Each member work from branches and that we shift reviews (at least one other teammate)<br>
 </li>
 <li>Branches allow for multiple commits on your own branch<br>
 </li>
-<li>Meaningful commmit messages - marked<br>
-</li>
+<li>Meaningful commmit messages</li>
 <li>Github issues - how to use?</li>
 </ul>
-<p>Discussion: Improvements from last week?</p>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>Improvements from last week?</p>
+<ul>
+<li><p>try to better distribute project between teammates better so that we all get exposure to different aspects of the project.</p></li>
+<li><p>Approval cycle? Aman -&gt; Emily -&gt; Ian -&gt; Vy -&gt; Aman</p></li>
+</ul>
 </section>
 <section id="fixes-from-milestone-1" class="level2">
 <h2 class="anchored" data-anchor-id="fixes-from-milestone-1">Fixes from Milestone 1</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">Great job using branches and pull requests! I know that most of your communications will be through Slack, but please try to learn to communicate through issues as well. This is super common practice and a great way to share ideas that you might want to implement. Ideally, try to aim for 2-3 issues (or responses to issues) per person.<br>
-</label></li>
-<li><label><input type="checkbox">Your analysis was interesting and well documented. Remember to only do EDA on training data to avoid data leakage.<br>
-</label></li>
-<li><label><input type="checkbox">One small note about reproducibility: Conda-lock doesn’t keep pip-installed packages, so your conda environment (from the Conda-lock file) was missing ucimlrepo and vegafusion. To avoid this, you can try installing these packages through conda directly<br>
-</label></li>
-<li><label><input type="checkbox">Finally, please rename your repository to be more descriptive (e.g.&nbsp;something like ‘iris-classifier’). This makes it easier for other users to find you work and potentially cite it!</label></li>
+<li><p><label><input type="checkbox">Great job using branches and pull requests! I know that most of your communications will be through Slack, but please try to learn to communicate through issues as well. This is super common practice and a great way to share ideas that you might want to implement. Ideally, try to aim for 2-3 issues (or responses to issues) per person.</label></p>
+<ul>
+<li><em>everyone look into how to use issues and practice</em></li>
+</ul></li>
+<li><p><label><input type="checkbox">Your analysis was interesting and well documented. Remember to only do EDA on training data to avoid data leakage.</label></p>
+<ul>
+<li>AMAN - done</li>
+</ul></li>
+<li><p><label><input type="checkbox">One small note about reproducibility: Conda-lock doesn’t keep pip-installed packages, so your conda environment (from the Conda-lock file) was missing ucimlrepo and vegafusion. To avoid this, you can try installing these packages through conda directly</label></p>
+<ul>
+<li>AMAN - done</li>
+</ul></li>
+<li><p><label><input type="checkbox">Finally, please rename your repository to be more descriptive (e.g.&nbsp;something like ‘iris-classifier’). This makes it easier for other users to find you work and potentially cite it!</label></p>
+<ul>
+<li>AMAN - done</li>
+</ul></li>
 </ul>
 </section>
 <section id="overview" class="level2">
@@ -90,9 +105,6 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="tasks">Tasks</h2>
 <section id="create-dockerfile" class="level3">
 <h3 class="anchored" data-anchor-id="create-dockerfile">1.1 Create Dockerfile</h3>
-<ul>
-<li>Create Dockerfile</li>
-</ul>
 </section>
 <section id="github-actions" class="level3">
 <h3 class="anchored" data-anchor-id="github-actions">1.2 GitHub Actions</h3>
@@ -102,18 +114,28 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="update-readme-documentation" class="level3">
 <h3 class="anchored" data-anchor-id="update-readme-documentation">1.4 Update README Documentation</h3>
+<ul>
+<li>VY / IAN?</li>
+</ul>
 </section>
 <section id="validation-checks" class="level3">
 <h3 class="anchored" data-anchor-id="validation-checks">2.1 Validation Checks</h3>
+<p>VY?</p>
 <ul class="task-list">
 <li><label><input type="checkbox">Correct data file format</label></li>
 <li><label><input type="checkbox">Correct column names</label></li>
 <li><label><input type="checkbox">No empty observations</label></li>
 <li><label><input type="checkbox">Missingness not beyond expected threshold</label></li>
+</ul>
+<p>EMILY?</p>
+<ul class="task-list">
 <li><label><input type="checkbox">Correct data types in each column</label></li>
 <li><label><input type="checkbox">No duplicate observations</label></li>
 <li><label><input type="checkbox">No outlier or anomalous values</label></li>
 <li><label><input type="checkbox">Correct category levels (i.e., no string mismatches or single values)</label></li>
+</ul>
+<p>IAN</p>
+<ul class="task-list">
 <li><label><input type="checkbox">Target/response variable follows expected distribution</label></li>
 <li><label><input type="checkbox">No anomalous correlations between target/response variable and features/explanatory variables</label></li>
 <li><label><input type="checkbox">No anomalous correlations between features/explanatory variables</label></li>
