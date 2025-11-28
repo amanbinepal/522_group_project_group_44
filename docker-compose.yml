@@ -1,0 +1,14 @@
+services:
+  '522-project':
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: amanbinepal/docker-522-project
+    container_name: 522-project
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/workplace
+    working_dir: /workplace
+    stdin_open: true
+    tty: true
