@@ -5,7 +5,8 @@ channels:
   - defaults
 
 dependencies:
-  - python
+  - python=3.11
+  - numpy<2
   - ipykernel
   - pandas
   - scikit-learn
@@ -18,5 +19,8 @@ dependencies:
   - pip:
       - vegafusion
       - pointblank
+      - deepchecks
+      - anywidget
+      - ipywidgets
   
 
