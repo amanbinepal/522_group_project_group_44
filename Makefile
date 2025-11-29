@@ -16,10 +16,7 @@ cl: ## create conda lock for multiple platforms
 	# the linux-aarch64 is used for ARM Macs using linux docker container
 	conda-lock lock \
 		--file environment.yml \
-		-p linux-64 \
-		-p osx-64 \
 		-p osx-arm64 \
-		-p win-64 \
 		-p linux-aarch64
 
 .PHONY: env
