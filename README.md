@@ -20,24 +20,72 @@ The final report can be found in src folder.
 
 ## Usage
 
-First time running the project,
-run the following from the root of this repository:
+### Method 1 - Running Analysis with Docker (Preferred)
+
+1. Clone this GitHub repository
 
 ``` bash
-conda-lock install --name dsci-522-project-env conda-lock.yml
+https://github.com/amanbinepal/diabetes-classification.git
 ```
 
-To run the analysis,
-run the following from the root of this repository:
+2. Navigate to the project root in the terminal and run the following command:
 
 ``` bash
-jupyter lab 
+docker compose up -d
 ```
 
-1. Open `src/diabetes_analysis.ipynb` in Jupyter Lab
-2. Under "Select Kernel" choose "Python [conda env:522-project]"
-3. From the "Kernel" menu, click "Restart Kernel and Run All Cells..."
+3. Open the JupyterLab URL displayed in the terminal (starts with http://127.0.0.1:8888/lab...)
 
+4. To run the analysis, navigate to src/ and open diabetest_analysis.ipynb in the JupyterLab launched from previous step. In the Kernel tab, click Restart Kernel and Run All Cells....
+
+5. To stop the container, press Ctrl + C in the terminal and run:
+
+``` bash
+docker compose stop
+```
+#### For Returning User:
+
+To get the latest image after updates:
+``` bash
+docker compose pull
+docker compose up
+```
+
+### Method 2 - Running Analysis using Environment File
+
+1. Clone this GitHub repository & navigate to the project root directory
+
+``` bash
+https://github.com/amanbinepal/diabetes-classification.git
+```
+
+2. Create the conda environment
+
+``` bash
+conda env create --file environment.yml
+```
+Alternatively, use conda-lock for a faster installation (must have conda-lock installed):
+``` bash
+conda-lock install --name 522-project conda-lock.yml
+```
+
+3. Activate the environment by using the environment name defined in YAML file
+
+``` bash
+conda activate 522-project
+```
+
+4. Launch JupyterLab from the root of this repository:
+
+``` bash
+jupyter lab
+```
+
+5. Open src/diabetes_analysis.ipynb in Jupyter Lab
+
+6. Under Switch Kernel, make sure that Python [conda env:522-project] is selected.
+
+7. Under the Kernel menu click Restart Kernel and Run All Cells... to execute analysis and generate the final report.
 ## Dependencies
 
 conda 
