@@ -13,6 +13,6 @@ validation_1_1 = (
 
 # Check if validation passed and save data validation results
 if validation_1_1.all_passed():
-    pd.DataFrame({'result': ['PASS']}).to_csv('objects/pass_data_validation1.txt', index=False)
+    pd.DataFrame({'result': ['PASS']}).to_csv('objects/pass_data_validation1_1.txt', index=False)
 else:
-    pd.DataFrame({'result': ['FAILED']}).to_csv('objects/failed_data_validation1.txt', index=False)
+    pd.DataFrame({'result': ['FAILED']}).to_csv('objects/failed_data_validation1_1.txt', index=False)
