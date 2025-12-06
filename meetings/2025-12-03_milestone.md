@@ -42,7 +42,21 @@ Attendance: Aman, Emily, Ian, Vy
 
 ### 1.1 Abstract code into .py
 
+#### Discission
+
 - Make sure we know what outputs are from previous .py  
+
+- create .ipynb without text - Emily
+- create variables/object folder - Emily
+
+- move code from .ipynb into .py - should run.
+- Coordinate breaks between scripts. 
+- Variables set up, script separate, add in click
+- data saved out as variables, as csv or pickle. Model can be pickle.
+
+- Add updates to just new quarto document of in the notebook too?
+
+#### Tasks
 
 - Download and save - Vy
 - data split, categorize features, data validation? - Vy
@@ -58,6 +72,7 @@ Attendance: Aman, Emily, Ian, Vy
 ### 1.3 Update README Documentation
 
 - Will see later as we work, who has time
+- With input/output objects to input as a command
 
 ### 1.4 Release
 
