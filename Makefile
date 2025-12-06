@@ -17,8 +17,7 @@ cl: ## create conda lock for multiple platforms
 	conda-lock lock \
 		--file environment.yml \
 		-p linux-64 \
-		-p osx-arm64 \
-		-p linux-aarch64
+		-p osx-arm64
 
 .PHONY: env
 env: ## remove previous and create environment from lock file
