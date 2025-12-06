@@ -59,3 +59,29 @@ docker-build-local: ## Build single-arch image for local testing (current platfo
 	docker build \
 		--tag amanbinepal/docker-522-project:local \
 		.
+
+.PHONY: pipeline fetch validate
+
+pipeline: fetch validate eda ## Run full pipeline
+
+fetch: ## Run scripts for fetching and splitting data
+	python src/01_fetch_data.py
+	python src/02_split_data.py
+	python src/03_train_set.py
+	python src/04_test_set.py
+
+validate: # Run scripts for data validation
+	python src/05_data_validation1_1.py
+	python src/06_data_validation1_2.py
+	python src/07_data_validation2.py
+	python src/08_data_validation3.py
+	python src/09_data_validation4.py
+	python src/10_data_validation5.py
+	python src/11_data_validation6.py
+	python src/12_data_validation7.py
+	python src/13_data_validation8.py
+	python src/14_data_validation9.py
+	python src/15_data_validation10.py
+
+eda: ## Run EDA
+	python src/16_eda_visualization.py
